@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharma's Hotel | Royal Heritage Stay</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="logo"><span class="logo-text">SHARMA'S HOTEL</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#amenities">Facilities</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+            <button class="book-now-btn">Book Now</button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2 style="letter-spacing: 5px; text-transform: uppercase; margin-bottom: 2rem;">Welcome to Luxury</h2>
+                <h1 class="hero-title">Experience Royal <br> Heritage at its Finest</h1>
+            </div>
+        </section>
+
+        <div class="booking-widget-container">
+            <div class="booking-widget">
+                <div class="input-group"><label>Check In</label><input type="date" value="2026-04-10"></div>
+                <div class="input-group"><label>Check Out</label><input type="date" value="2026-04-15"></div>
+                <div class="input-group">
+                    <label>Guests</label>
+                    <select><option selected>2 Guests</option><option>1 Guest</option></select>
+                </div>
+                <button class="check-availability">Check Availability</button>
+            </div>
+        </div>
+
+        <section id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image"><img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1000" alt="Hotel"></div>
+                    <div class="about-content">
+                        <h2 class="section-title">The Legacy of Sharma's Hotel</h2>
+                        <p style="margin-top: 2rem;">Discover the perfect blend of traditional Rajput architecture and modern luxury. Every corner of our hotel tells a story of valor and luxury, meticulously preserved for the modern traveler.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rooms" class="rooms">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Suites & Rooms</h2>
+                    <p>Designed for royalty, tailored for you.</p>
+                </div>
+                <div class="rooms-grid">
+                    <!-- Maharaja Garden Suite -->
+                    <div class="room-card">
+                        <div class="room-img"><img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80&w=800" alt="Maharaja Garden Suite"></div>
+                        <div class="room-info">
+                            <p style="color: var(--secondary); font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">Maharaja Suite</p>
+                            <h3>Maharaja Garden Suite</h3>
+                            <p style="margin: 1rem 0;">Spacious luxury with private garden views and traditional hand-painted ceilings.</p>
+                            <div class="room-meta">
+                                <span><i data-lucide="maximize"></i> 450 sq ft</span>
+                                <span><i data-lucide="users"></i> 2 Adults</span>
+                            </div>
+                            <button style="background:none; border:none; border-bottom: 2px solid var(--secondary); font-weight: 700; cursor: pointer;">View Details</button>
+                        </div>
+                    </div>
+                    <!-- Royal Heritage Chamber -->
+                    <div class="room-card">
+                        <div class="room-img"><img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80&w=800" alt="Royal Heritage Chamber"></div>
+                        <div class="room-info">
+                            <p style="color: var(--secondary); font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">Royal Chamber</p>
+                            <h3>Royal Heritage Chamber</h3>
+                            <p style="margin: 1rem 0;">Experience the charm of Rajputana with antique furniture and modern amenities.</p>
+                            <div class="room-meta">
+                                <span><i data-lucide="maximize"></i> 350 sq ft</span>
+                                <span><i data-lucide="users"></i> 2 Adults</span>
+                            </div>
+                            <button style="background:none; border:none; border-bottom: 2px solid var(--secondary); font-weight: 700; cursor: pointer;">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="amenities">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">World Class Facilities</h2>
+                    <p>Every amenity designed for your ultimate relaxation.</p>
+                </div>
+                <div class="facilities-grid">
+                    <div class="facility-card">
+                        <i data-lucide="waves"></i>
+                        <h3>Infinity Pool</h3>
+                        <p>Relax in our temperature-controlled pool with a view.</p>
+                    </div>
+                    <div class="facility-card">
+                        <i data-lucide="utensils"></i>
+                        <h3>Fine Dining</h3>
+                        <p>Experience local Rajasthani flavors by master chefs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="section-header"><h2 class="section-title" style="color: #FFF;">Visual Splendor</h2></div>
+                <div class="gallery-mosaic">
+                    <div class="gallery-item tall"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=600"></div>
+                    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=600"></div>
+                    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=600"></div>
+                    <div class="gallery-item wide"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>
+                <h3>SHARMA'S HOTEL</h3>
+                <p>Preserving the art of Indian hospitality.</p>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <ul style="list-style:none; margin-top: 1rem;">
+                    <li><a href="#about" style="color:#FFF;">Our Story</a></li>
+                    <li><a href="#rooms" style="color:#FFF;">Rooms</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p style="margin-top: 1rem;">123 Heritage Lane, Chittorgarh</p>
+                <p>+91 98765 43210</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919876543210" class="whatsapp-float"><i data-lucide="message-circle"></i></a>
+
+    <script src="main.js"></script>
+</body>
+</html>
