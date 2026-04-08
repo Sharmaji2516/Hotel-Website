@@ -11,6 +11,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <div class="close-menu" id="closeMenu"><i data-lucide="x"></i></div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#amenities">Facilities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </div>
+
     <nav id="navbar" class="navbar">
         <div class="nav-container">
             <div class="logo"><span class="logo-text">SHARMA'S HOTEL</span></div>
@@ -21,7 +33,10 @@
                 <li><a href="#amenities">Facilities</a></li>
                 <li><a href="#gallery">Gallery</a></li>
             </ul>
-            <button class="book-now-btn">Book Now</button>
+            <div class="nav-actions">
+                <button class="book-now-btn desktop-only">Book Now</button>
+                <div class="menu-btn" id="openMenu"><i data-lucide="menu"></i></div>
+            </div>
         </div>
     </nav>
 
@@ -29,7 +44,7 @@
         <section id="home" class="hero" style="background: url('images/sharma_hotel_architecture_1775640683906.png') center/cover no-repeat;">
             <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h2 style="letter-spacing: 5px; text-transform: uppercase; margin-bottom: 2rem;">Welcome to Luxury</h2>
+                <h2 class="hero-label">Welcome to Luxury</h2>
                 <h1 class="hero-title">Experience Royal <br> Heritage at its Finest</h1>
             </div>
         </section>
@@ -52,7 +67,7 @@
                     <div class="about-image"><img src="images/hotel_courtyard_pool_1775640759883.png" alt="Hotel Courtyard"></div>
                     <div class="about-content">
                         <h2 class="section-title">The Legacy of Sharma's Hotel</h2>
-                        <p style="margin-top: 2rem;">Discover the perfect blend of traditional Rajput architecture and modern luxury. Every corner of our hotel tells a story of valor and luxury, meticulously preserved for the modern traveler.</p>
+                        <p class="section-p">Discover the perfect blend of traditional Rajput architecture and modern luxury. Every corner of our hotel tells a story of valor and luxury, meticulously preserved for the modern traveler.</p>
                     </div>
                 </div>
             </div>
@@ -69,28 +84,28 @@
                     <div class="room-card">
                         <div class="room-img"><img src="images/maharaja_suite_interior_1775640710536.png" alt="Maharaja Garden Suite"></div>
                         <div class="room-info">
-                            <p style="color: var(--secondary); font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">Maharaja Suite</p>
+                            <p class="room-category">Maharaja Suite</p>
                             <h3>Maharaja Garden Suite</h3>
-                            <p style="margin: 1rem 0;">Spacious luxury with private garden views and traditional hand-painted ceilings.</p>
+                            <p class="room-desc">Spacious luxury with private garden views and traditional hand-painted ceilings.</p>
                             <div class="room-meta">
                                 <span><i data-lucide="maximize"></i> 450 sq ft</span>
                                 <span><i data-lucide="users"></i> 2 Adults</span>
                             </div>
-                            <button style="background:none; border:none; border-bottom: 2px solid var(--secondary); font-weight: 700; cursor: pointer;">View Details</button>
+                            <button class="view-details">View Details</button>
                         </div>
                     </div>
                     <!-- Royal Heritage Chamber -->
                     <div class="room-card">
                         <div class="room-img"><img src="images/royal_chamber_interior_1775640734716.png" alt="Royal Heritage Chamber"></div>
                         <div class="room-info">
-                            <p style="color: var(--secondary); font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">Royal Chamber</p>
+                            <p class="room-category">Royal Chamber</p>
                             <h3>Royal Heritage Chamber</h3>
-                            <p style="margin: 1rem 0;">Experience the charm of Rajputana with antique furniture and modern amenities.</p>
+                            <p class="room-desc">Experience the charm of Rajputana with antique furniture and modern amenities.</p>
                             <div class="room-meta">
                                 <span><i data-lucide="maximize"></i> 350 sq ft</span>
                                 <span><i data-lucide="users"></i> 2 Adults</span>
                             </div>
-                            <button style="background:none; border:none; border-bottom: 2px solid var(--secondary); font-weight: 700; cursor: pointer;">View Details</button>
+                            <button class="view-details">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -142,16 +157,16 @@
                     <a href="#"><i data-lucide="twitter"></i></a>
                 </div>
             </div>
-            <div>
+            <div class="footer-explore">
                 <h4>Explore</h4>
-                <ul style="list-style:none; margin-top: 1rem;">
-                    <li><a href="#about" style="color:#FFF;">Our Story</a></li>
-                    <li><a href="#rooms" style="color:#FFF;">Rooms</a></li>
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
                 </ul>
             </div>
             <div>
                 <h4>Contact</h4>
-                <p style="margin-top: 1rem;">123 Heritage Lane, Chittorgarh</p>
+                <p>123 Heritage Lane, Chittorgarh</p>
                 <p>+91 98765 43210</p>
             </div>
         </div>
