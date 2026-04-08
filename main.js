@@ -7,12 +7,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navbar Scroll Effect
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+        if (navbar) {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+
+        // Show/Hide Scroll to Top button
+        const scrollTopBtn = document.getElementById('scrollTop');
+        if (scrollTopBtn) {
+            if (window.scrollY > 500) {
+                scrollTopBtn.style.display = 'flex';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
         }
     });
+
+    // Scroll to Top Functionality
+    const scrollTopBtn = document.getElementById('scrollTop');
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 
     // Mobile Menu Toggle
     const mobileOverlay = document.getElementById('mobileOverlay');
@@ -23,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (openMenu && mobileOverlay) {
         openMenu.addEventListener('click', () => {
             mobileOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+            document.body.style.overflow = 'hidden';
         });
     }
 
@@ -34,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Close menu when a link is clicked
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
             mobileOverlay.classList.remove('active');

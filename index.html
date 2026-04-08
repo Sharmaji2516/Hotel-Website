@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sharma's Hotel | Royal Heritage Stay</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="styles.css">
@@ -80,7 +80,6 @@
                     <p>Designed for royalty, tailored for you.</p>
                 </div>
                 <div class="rooms-grid">
-                    <!-- Maharaja Garden Suite -->
                     <div class="room-card">
                         <div class="room-img"><img src="images/maharaja_suite_interior_1775640710536.png" alt="Maharaja Garden Suite"></div>
                         <div class="room-info">
@@ -94,7 +93,6 @@
                             <button class="view-details">View Details</button>
                         </div>
                     </div>
-                    <!-- Royal Heritage Chamber -->
                     <div class="room-card">
                         <div class="room-img"><img src="images/royal_chamber_interior_1775640734716.png" alt="Royal Heritage Chamber"></div>
                         <div class="room-info">
@@ -140,50 +138,73 @@
                     <p style="color: rgba(255,255,255,0.6);">A glimpse into the soul of royal hospitality.</p>
                 </div>
                 <div class="gallery-mosaic">
-                    <div class="gallery-item tall arched">
-                        <img src="images/gallery_entrance_facade_1775644187513.png" alt="Grand Entrance">
-                    </div>
-                    <div class="gallery-item arched">
-                        <img src="images/gallery_dining_hall_1775644204114.png" alt="Fine Dining Hall">
-                    </div>
-                    <div class="gallery-item arched">
-                        <img src="images/gallery_balcony_view_1775644221297.png" alt="Fort View Balcony">
-                    </div>
-                    <div class="gallery-item wide arched">
-                        <img src="images/gallery_courtyard_fountain_1775644240296.png" alt="Palace Courtyard">
-                    </div>
+                    <div class="gallery-item tall arched"><img src="images/gallery_entrance_facade_1775644187513.png"></div>
+                    <div class="gallery-item arched"><img src="images/gallery_dining_hall_1775644204114.png"></div>
+                    <div class="gallery-item arched"><img src="images/gallery_balcony_view_1775644221297.png"></div>
+                    <div class="gallery-item wide arched"><img src="images/gallery_courtyard_fountain_1775644240296.png"></div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container footer-container">
-            <div>
-                <h3>SHARMA'S HOTEL</h3>
-                <p>Preserving the art of Indian hospitality.</p>
-                <div class="social-links">
-                    <a href="#"><i data-lucide="instagram"></i></a>
-                    <a href="#"><i data-lucide="facebook"></i></a>
-                    <a href="#"><i data-lucide="twitter"></i></a>
+        <div class="footer-top-logo">
+            <div class="logo-wrapper">
+                <span class="logo-main">SHARMA'S HOTEL</span>
+                <span class="logo-subtext">CHITTORGARH</span>
+            </div>
+        </div>
+        
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>LOCATION</h3>
+                <p>123 Heritage Lane, Near Chittorgarh Fort</p>
+                <p>Chittorgarh, Rajasthan - 312001</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>RESERVATIONS</h3>
+                <p style="font-weight: 600;">+91 98765 43210</p>
+                <p style="font-weight: 600;">+91 1472 240000</p>
+                <p class="footer-email">reservations@sharmahotel.com</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>FOLLOW US</h3>
+                <div class="social-links-minimal">
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="TripAdvisor"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 9.5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5zm0-1c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5zm7.5 1c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5zm0-1c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5zm-15 1c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5zm0-1c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5zm7.5-6.5c-3.1 0-5.7 1.83-6.86 4.5h13.72c-1.16-2.67-3.76-4.5-6.86-4.5zM3.44 14.22a5.53 5.53 0 0 1-.94-3.22c0-3.04 2.46-5.5 5.5-5.5.34 0 .68.03 1.01.09C10.03 3.86 12.01 2.5 14.5 2.5c2.49 0 4.47 1.36 5.49 3.09.33-.06.67-.09 1.01-.09 3.04 0 5.5 2.46 5.5 5.5 0 1.15-.35 2.22-.94 3.12l1.41 1.41-1.41 1.41-1.63-1.63a5.454 5.454 0 0 1-2.92.85c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5c.34 0 .68.03 1.01.09C17.03 8.36 15.01 7 12.5 7s-4.53 1.36-5.49 3.09c.33-.06.67-.09 1.01-.09 1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5c-.34 0-.68-.03-1.01-.09C6.03 18.64 4.01 20 1.5 20c-2.49 0-4.47-1.36-5.49-3.09-.33.06-.67.09-1.01.09-3.04 0-5.5-2.46-5.5-5.5 0-1.15.35-2.22.94-3.12l-1.41-1.41 1.41-1.41 1.63 1.63c.63-.53 1.34-.85 2.12-.85z"/></svg></a>
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="Google"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 11h8.5c.3 1 .5 2 .5 3 0 5.5-3.8 9.5-9 9.5a9.5 9.5 0 1 1 0-19c2.6 0 4.8 1 6.6 2.6l-2.6 2.6A6.5 6.5 0 1 0 12 17c3.3 0 6.1-2.4 6.9-5.7H12v-3z"/></svg></a>
                 </div>
             </div>
-            <div class="footer-explore">
-                <h4>Explore</h4>
-                <ul>
-                    <li><a href="#about">Our Story</a></li>
-                    <li><a href="#rooms">Rooms</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Contact</h4>
-                <p>123 Heritage Lane, Chittorgarh</p>
-                <p>+91 98765 43210</p>
-            </div>
+        </div>
+
+        <div class="footer-nav-bottom">
+            <ul class="bottom-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#amenities">Facilities</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <p class="copyright">Sitemap | Website by Sharma's Hotel</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/919876543210" class="whatsapp-float"><i data-lucide="message-circle"></i></a>
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="https://wa.me/919876543210" class="float-btn whatsapp" target="_blank" aria-label="WhatsApp">
+            <i data-lucide="message-circle"></i>
+        </a>
+        <a href="tel:+919876543210" class="float-btn phone" aria-label="Call Us">
+            <i data-lucide="phone"></i>
+        </a>
+        <button id="scrollTop" class="float-btn scroll-top" aria-label="Scroll to top">
+            <i data-lucide="arrow-up"></i>
+        </button>
+    </div>
 
     <script src="main.js"></script>
 </body>
