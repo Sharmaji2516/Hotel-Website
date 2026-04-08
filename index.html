@@ -61,23 +61,19 @@
             </div>
         </div>
 
-        <section id="about">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-image"><img src="images/hotel_courtyard_pool_1775640759883.png" alt="Hotel Courtyard"></div>
-                    <div class="about-content">
-                        <h2 class="section-title">The Legacy of Sharma's Hotel</h2>
-                        <p class="section-p">Discover the perfect blend of traditional Rajput architecture and modern luxury.</p>
-                    </div>
+        <section id="about" class="container">
+            <div class="about-grid">
+                <div class="about-image"><img src="images/hotel_courtyard_pool_1775640759883.png" alt="Hotel Courtyard"></div>
+                <div class="about-content">
+                    <h2 class="section-title" style="text-align: left;">The Legacy of Sharma's Hotel</h2>
+                    <p class="section-p">Experience the perfect blend of traditional Rajput architecture and modern luxury. Every corner tells a story of valor and heritage.</p>
                 </div>
             </div>
         </section>
 
         <section id="rooms" class="rooms">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Suites & Rooms</h2>
-                </div>
+                <h2 class="section-title">Suites & Rooms</h2>
                 <div class="rooms-grid">
                     <div class="room-card">
                         <div class="room-img"><img src="images/maharaja_suite_interior_1775640710536.png" alt="Maharaja Suite"></div>
@@ -103,24 +99,22 @@
             </div>
         </section>
 
-        <section id="amenities">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Facilities</h2>
-                </div>
-                <div class="facilities-grid">
-                    <div class="facility-card"><i data-lucide="waves"></i><h3>Pool</h3></div>
-                    <div class="facility-card"><i data-lucide="utensils"></i><h3>Dining</h3></div>
-                </div>
+        <section id="amenities" class="container">
+            <h2 class="section-title">World Class Facilities</h2>
+            <div class="facilities-grid">
+                <div class="facility-card"><i data-lucide="waves"></i><h3>Infinity Pool</h3></div>
+                <div class="facility-card"><i data-lucide="utensils"></i><h3>Fine Dining</h3></div>
             </div>
         </section>
 
         <section id="gallery" class="gallery">
             <div class="container">
-                <div class="section-header"><h2 class="section-title">Visual Splendor</h2></div>
+                <h2 class="section-title" style="color:#FFF;">Visual Splendor</h2>
                 <div class="gallery-mosaic">
                     <div class="gallery-item arched"><img src="images/gallery_entrance_facade_1775644187513.png"></div>
                     <div class="gallery-item arched"><img src="images/gallery_courtyard_fountain_1775644240296.png"></div>
+                    <div class="gallery-item arched"><img src="images/gallery_dining_hall_1775644204114.png"></div>
+                    <div class="gallery-item arched"><img src="images/gallery_balcony_view_1775644221297.png"></div>
                 </div>
             </div>
         </section>
@@ -135,13 +129,14 @@
             <div class="footer-col">
                 <h3>LOCATION</h3>
                 <p>123 Heritage Lane, Chittorgarh</p>
+                <p>Rajasthan - 312001</p>
             </div>
             <div class="footer-col">
                 <h3>RESERVATIONS</h3>
                 <p>+91 98765 43210</p>
-                <p style="color:var(--secondary);">reservations@sharmahotel.com</p>
+                <p style="color:var(--secondary); font-size: 0.9rem;">reservations@sharmahotel.com</p>
             </div>
-            <div class="footer-col">
+            <div class="footer-col" id="socialSection">
                 <h3>FOLLOW US</h3>
                 <div class="social-links-minimal">
                     <a href="#"><i data-lucide="instagram"></i></a>
@@ -157,10 +152,11 @@
                 <li><a href="#amenities">Facilities</a></li>
                 <li><a href="#gallery">Gallery</a></li>
             </ul>
+            <p class="copyright">Sitemap | Website by Sharma's Hotel</p>
         </div>
     </footer>
 
-    <div class="floating-actions">
+    <div class="floating-actions" id="floatingActions">
         <a href="https://wa.me/919876543210" class="float-btn whatsapp"><i data-lucide="message-circle"></i></a>
         <a href="tel:+919876543210" class="float-btn phone"><i data-lucide="phone"></i></a>
         <button id="scrollTop" class="float-btn scroll-top"><i data-lucide="arrow-up"></i></button>
