@@ -101,6 +101,56 @@ section { padding: 6rem 0; width: 100%; }
     .facility-card { padding: 1.5rem; }
 }
 
+/* --- ChittorTech Developer Credit --- */
+.dev-credit-wrapper {
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dev-credit-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,0.03);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: var(--transition);
+  text-decoration: none !important;
+}
+
+.dev-credit-link:hover {
+  background: rgba(212, 175, 55, 0.1); 
+  border-color: var(--secondary);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.dev-credit-logo {
+  height: 28px;
+  width: auto;
+  border-radius: 4px;
+}
+
+.dev-credit-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dev-credit-text b {
+  color: var(--secondary);
+  font-weight: 700;
+  margin-left: 4px;
+}
+
 @media (max-width: 600px) {
     .logo-text { font-size: 1.1rem; }
     .gallery-mosaic { grid-template-columns: 1fr; }
